@@ -1,9 +1,11 @@
 const numbers = [45, 4, 9, 16, 25];
+ 
+function myFunction(value,index,array) {
+    console.log(value);
+    console.log(index);
+    console.log(array);
+    console.log('----------');
 
-let txt = "";
-numbers.forEach(myFunction);
-document.getElementById("demo").innerHTML = txt;
-
-function myFunction(value, index, array) {
-  txt += value + "<br>"; 
 }
+
+numbers.forEach(myFunction);
