@@ -1,8 +1,9 @@
-const fruits = ["Banana","Orange","Apple","Labu","zero"];
-document.getElementById("demo1").innerHTML = fruits;
+const numbers = [45, 4, 9, 16, 25];
 
-fruits.sort();
-document.getElementById("demo2").innerHTML = fruits;
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
 
-fruits.reverse();
-document.getElementById("demo3").innerHTML = fruits;
+function myFunction(value, index, array) {
+  txt += value + "<br>"; 
+}
